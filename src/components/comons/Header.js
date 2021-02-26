@@ -3,21 +3,21 @@ import React from "react";
 function Header() {
   return (
     
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="#" class="logo">Peritus Mobile</a>
+    <header className="header-area header-sticky">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <nav className="main-nav">
+                        <a href="#" className="logo">Peritus Mobile</a>
                        
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
-                              <li class="scroll-to-section"><a href="/about" class="active">About</a></li>
-                              <li class="scroll-to-section"><a href="/services" class="active">Services</a></li>
-                              <li  class="scroll-to-section"><a href="/frequently" class="active">Frequently Questions</a></li>
-                              <li class="scroll-to-section"><a href="/contact" class="active">Contact us</a></li>
+                        <ul className="nav">
+                            <li className="scroll-to-section"><a href="/" className="active">Home</a></li>
+                              <li className="scroll-to-section"><a href="/about" className="active">About</a></li>
+                              <li className="scroll-to-section"><a href="/services" className="active">Services</a></li>
+                              <li  className="scroll-to-section"><a href="/frequently" className="active">Frequently Questions</a></li>
+                              <li className="scroll-to-section"><a href="/contact" className="active">Contact us</a></li>
                       </ul>
-                        <a class='menu-trigger'>
+                        <a className='menu-trigger'>
                             <span>Menu</span>
                         </a>
 
