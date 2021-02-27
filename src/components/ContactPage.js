@@ -26,6 +26,44 @@ const ContactPage = (props) => {
     setContactMessage(updatedContactMessage);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    let formData = new FormData();
+    // let collection = {};
+    formData.append("fullname", contactMessage.userfullname);
+    formData.append("email", contactMessage.useremail);
+    formData.append("message", contactMessage.usermessage);
+
+    console.log(formData);
+    fetch("https://techlinegroup.com/expense/api/add_exp.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "multipart/form-data."
+      },
+      body: formData
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log("Success:", data);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      })
+      //,
+      // this.setState({
+      //   props.contactMessage.userfullname: "",
+      //   title: "",
+      //   description: "",
+      // })
+      ;
+    createFinishedAddingAlert();
+
+  };
+
+  function createFinishedAddingAlert () {
+      alert("Finished Adding" );
+  }
+
   return (
     <section className="section" id="contact-us">
       <div className="row">
@@ -48,6 +86,7 @@ const ContactPage = (props) => {
             onNameChange={handleNameChange}
             onEmailChange={handleEmailChange}
             onMessageChange={handleMessageChange}
+            onSubmit={handleSubmit}
           />
         </div>
       </div>

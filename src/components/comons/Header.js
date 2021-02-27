@@ -14,7 +14,7 @@ function Header() {
                             <li className="scroll-to-section"><a href="/" className="active">Home</a></li>
                               <li className="scroll-to-section"><a href="/about" className="active">About</a></li>
                               <li className="scroll-to-section"><a href="/services" className="active">Services</a></li>
-                              <li  className="scroll-to-section"><a href="/frequently" className="active">Frequently Questions</a></li>
+                              <li className="scroll-to-section"><a href="/frequently" className="active">Frequently Questions</a></li>
                               <li className="scroll-to-section"><a href="/contact" className="active">Contact us</a></li>
                       </ul>
                         <a className='menu-trigger'>

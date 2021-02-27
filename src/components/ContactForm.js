@@ -3,7 +3,7 @@ import React from "react";
 function ContactForm(props) {
     return (
         <div className="contact-form">
-            <form id="contact" action="" method="post">
+            <form id="contact" onSubmit={props.onSubmit}>
                 <div className="row">
                     <div className="col-md-6 col-sm-12">
                         <fieldset>
